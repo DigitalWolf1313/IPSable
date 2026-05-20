@@ -44,6 +44,12 @@ public class IPModEntry {
         IPModMain.init(eventBus);
         RequiemCompat.init();
 
+        // Sable-fork phase 0: register kill-switch listener for the ipl_sable:sublevels dim.
+        // Logs at server start whether the datapack-registered hosting dimension actually loaded;
+        // surfaces frozen-registry / datapack-schema failures loudly instead of silently NPE'ing
+        // in later phases of the dim-agnostic refactor. See REFACTOR_SPEC.md phase 0.
+        ipl.sable.dim.SableSubLevelDimension.init();
+
 // @Nick1st Neo moved
 //        IPModMain.registerEntityTypes(
 //            (id, entityType) -> Registry.register(BuiltInRegistries.ENTITY_TYPE, id, entityType)

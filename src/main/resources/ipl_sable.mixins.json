@@ -14,7 +14,12 @@
     "SableProcessSubLevelRemovalsKinematicSkipMixin",
     "SableMirrorRemovalGuardMixin",
     "SableMirrorSkipMoveToUnloadedMixin",
-    "IplServerHeartbeatMixin"
+    "IplServerHeartbeatMixin",
+    "IplSubLevelFieldSplitMixin",
+    "IplSubLevelAllocRoutingMixin",
+    "IplTrackingSystemParentRedirectMixin",
+    "IplRapier3DUnifyMixin",
+    "IplPipelineAddDefaultsMixin"
   ],
   "client": [
     "client.VeilPacketContextLevelMixin",
